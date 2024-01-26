@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Spotify Imersão</title>
 
-    <link rel="stylesheet" href="./styles/reset.css" />
-    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="stylesheet" href="./src/styles/reset.css" />
+    <link rel="stylesheet" href="./src/styles/vars.css" />
+    <link rel="stylesheet" href="./src/styles/sidebar-footer.css" />
 
     <link
       rel="stylesheet"
@@ -19,14 +20,16 @@
       href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
       rel="stylesheet"
     />
-    <script src="./scripts/script.js"></script>
   </head>
   <body>
     <div class="sidebar">
       <nav class="sidebar__navigation">
         <div class="logo">
           <a href="#">
-            <img src="./assets/icons/logo-spotify.png" alt="logo do Spotify" />
+            <img
+              src="./src/assets/icons/logo-spotify.png"
+              alt="logo do Spotify"
+            />
           </a>
         </div>
         <ul>
@@ -75,8 +78,16 @@
         </div>
       </div>
     </div>
+
     <footer>
-      
+      <div class="footer__content">
+        <span>TESTAR O PREMIUM DE GRAÇA</span>
+        <span
+          >Inscreva-se para curtir músicas ilimitadas e podcasts só com alguns
+          anúncios. Não precisa de cartão de crédito.
+        </span>
+      </div>
+      <button class="footer__button">Inscreva-se grátis</button>
     </footer>
   </body>
 </html>

@@ -1,5 +1,6 @@
 body {
   background-color: #000;
+  font-family: var(--font-dm-sans);
 }
 
 .sidebar {
@@ -41,7 +42,6 @@ body {
   text-decoration: none;
   font-weight: 600;
   font-size: 14px;
-  font-family: "DM Sans", sans-serif;
 }
 
 .library {
@@ -70,7 +70,6 @@ body {
   border: 0px;
   font-size: 14px;
   font-weight: 700;
-  font-family: "DM Sans", sans-serif;
   text-align: center;
   text-decoration: none;
   text-transform: none;
@@ -109,7 +108,6 @@ body {
 .section-playlist__content .text {
   padding-bottom: 14px;
   color: #fff;
-  font-family: "DM Sans", sans-serif;
 }
 
 .section-playlist__content .title {
@@ -129,7 +127,6 @@ body {
   border-radius: 20px;
   font-size: 12px;
   font-weight: 700;
-  font-family: "DM Sans", sans-serif;
   text-decoration: none;
   text-transform: none;
   margin-top: 12px;
@@ -153,7 +150,7 @@ body {
   text-decoration: underline;
 }
 
- .lenguages .lenguages__button{
+.lenguages .lenguages__button {
   align-items: center;
   background-color: transparent;
   border: 1px solid #878787;
@@ -164,4 +161,39 @@ body {
   margin: 8px;
   padding: 8px;
   cursor: pointer;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background: linear-gradient(to right, #c42b6d, #5185ff);
+  padding: 20px;
+  text-align: right;
+  color: #fff;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+footer .footer__content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+footer .footer__button {
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
+  color: #000;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: none;
+  margin-top: 12px;
+  padding: 10px;
+  border: 0;
+  width: 113px;
 }
