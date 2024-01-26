@@ -5,9 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Spotify Imersão</title>
 
+    <!-- Inclui o CSS -->
     <link rel="stylesheet" href="./src/styles/reset.css" />
     <link rel="stylesheet" href="./src/styles/vars.css" />
     <link rel="stylesheet" href="./src/styles/sidebar-footer.css" />
+    <link rel="stylesheet" href="./src/styles/main-content.css" />
+
+    <!-- FONTS -->
 
     <link
       rel="stylesheet"
@@ -79,15 +83,53 @@
       </div>
     </div>
 
-    <footer>
-      <div class="footer__content">
-        <span>TESTAR O PREMIUM DE GRAÇA</span>
-        <span
-          >Inscreva-se para curtir músicas ilimitadas e podcasts só com alguns
-          anúncios. Não precisa de cartão de crédito.
-        </span>
+    <main>
+      <div class="main-container">
+        <nav class="header__navigation">
+          <div class="navigation">
+            <button class="arrow-left">
+              <img
+                src="./src/assets/icons/small-left.png"
+                alt="Seta a esquerda"
+              />
+            </button>
+            <button class="arrow-right">
+              <img
+                src="./src/assets/icons/small-right.png"
+                alt="Seta a direita"
+              />
+            </button>
+          </div>
+
+          <div class="header__search">
+            <img src="./src/assets/icons/search.png" alt="" />
+            <input
+              id="search-input"
+              type="text"
+              maxlength="800"
+              placeholder="O que você quer ouvir?"
+            />
+          </div>
+
+          <div class="header__login">
+            <button class="subscribe">Inscreva-se</button>
+            <button class="login">Entrar</button>
+          </div>
+        </nav>
       </div>
-      <button class="footer__button">Inscreva-se grátis</button>
+    </main>
+
+    <footer class="disclaimer-premium">
+      <div class="text">
+        <p class="disclaimer-premium__title">TESTAR O PREMIUM DE GRAÇA</p>
+        <p class="disclaimer-premium__subtitle">
+          Inscreva-se para curtir músicas ilimitadas e podcasts só com alguns
+          anúncios. Não precisa de cartão de crédito.
+        </p>
+      </div>
+      <div class="button">
+        <button type="button">Inscreva-se grátis</button>
+      </div>
     </footer>
   </body>
 </html>
