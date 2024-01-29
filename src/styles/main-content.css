@@ -25,6 +25,7 @@
 .header__navigation .navigation .arrow-left {
   margin-right: 1.25rem;
 }
+
 .arrow-left,
 .arrow-right {
   display: flex;
@@ -33,9 +34,9 @@
   width: 32px;
   height: 32px;
   background: var(--bg-icon);
-  background-color: var(--bg-arrow-color);
-  border: none;
+  background-color: rgba(0, 0, 0, 0.7);
   border-radius: 50%;
+  border: none;
   cursor: pointer;
 }
 
@@ -67,13 +68,14 @@
   padding: 0px 100px 0 12px;
   color: #fff;
   text-overflow: ellipsis;
+  outline: none;
+  text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
-  outline: none;
 }
 
 .header__login .subscribe {
-  color: #a7a7a7;
+  color: var(--text-sub);
   font-size: 16px;
   font-weight: 700;
   background-color: transparent;
@@ -84,11 +86,24 @@
 .header__login .login {
   width: 100px;
   height: 48px;
-  color: #000;
+  color: var(--text-base-dark);
   font-size: 16px;
   font-weight: 700;
   border-radius: 40px;
-  border: none;
+}
+
+/* HOVER */
+.header__search:hover {
+  border: 1px solid #fff;
+}
+
+.header__login .subscribe:hover {
+  transform: scale(1.04);
+  color: var(--text-base-light);
+}
+
+.header__login .login:hover {
+  transform: scale(1.04);
 }
 
 /* PLAYLIST */
@@ -134,18 +149,12 @@
 
 .offer__list-item {
   display: grid;
-  justify-items: center;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-gap: 16px;
-  gap: 16px;
-  margin-bottom: 16px;
-/*
-  display: grid;
   gap: 16px;
   grid-gap: 32px;
   margin: 0 auto;
-  */
 }
+
+/* POSITION */
 
 .cards {
   position: relative;
@@ -220,7 +229,6 @@
 }
 
 /* CARD ARTISTA */
-
 .artist {
   --column-count: 5;
   --grid-gap: 24px;
@@ -231,7 +239,7 @@
   display: none;
 }
 
-.grid-conteiner {
+.grid-container {
   grid-gap: var(--grid-gap);
   display: grid;
   grid-template-columns: repeat(var(--column-count), minmax(0, 1fr));
